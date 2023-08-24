@@ -1,0 +1,103 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/md.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap" rel="stylesheet"> 
+    <title>Mobile design</title>
+</head>
+<body>
+    <div class="back">
+       <a href="../index.html">&#8592;</a> 
+    </div>
+    <section class="blog" id="amts">
+        <div class="banner">
+
+        </div>
+        <h2>User Interface of AMTS (bus travelling Application)</h2>
+        <div class="file">
+            <img src="../images/amtsmockup.png">
+            <button name="jump" onclick="jump()">Jump to Prototype</button>           
+        </div>
+        <div class="paragraph">
+           <p> &nbsp;&nbsp;&nbsp; AMTS is bus travelling application
+            In Ahmedabad. which has diffrent
+             type of users like guest users,
+             normal user and complete user etc.  </p>
+            
+              <p> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;guest users can search bus routes complain and contact administrator. normal user can access all feature of guest although it can purchase tickets access profile section and sees history and download recent bought tickets. complete user can access all feature which is mention below.</p>
+        </div>
+        <div class="features">
+            <h5>Features of AMTS : </h5>
+            <ul>
+                <li><a href=""> online Ticket Booking</a></li>
+                <li><a href=""> Bus Pass Extension Online</a></li>
+                <li><a href=""> Bus search facility</a></li>
+                <li><a href=""> payment facility</a></li>
+                <li><a href=""> complaint regarding Bad behavior</a></li>
+                <li><a href=""> The latest news about AMTS</a></li>
+                <li><a href=""> View your recent Bought tickets</a></li>
+                <li><a href=""> contact Module</a></li>
+                <li><a href="#"> virtual Bus pass Card</a></li>
+            </ul>
+        </div>
+            <hr>
+    </section>
+    <section class="blog" id="moviefly">
+        <div class="banner">
+
+        </div>
+        <h2>UI of Moviefly (movie watching application)</h2>
+        <div class="file">
+            <img src="../images/SSA.png" style="width: 80%;"> 
+            <button name="jump" onclick="jump1()">Jump to Prototype</button>           
+        </div>
+        <div class="paragraph">
+         <p>Paid Movie service Providing Application which Provides Theme changing also in dark mode.</p>
+         <p>upto 4 Devices are allow in one account with same private key.We can download high resolution video too.</p>
+        </div>
+        <div class="features">
+            <h5>Features of Moviefly: </h5>
+            <ul>
+                <li><a href="">paid membership</a></li>
+                <li><a href="">favorite list</a></li>
+                <li><a href="">search operation y</a></li>
+                <li><a href="">multi-device access</a></li>
+                <li><a href="">Theme changing   </a></li>
+                <li><a href="">User management</a></li>
+                <li><a href="">login & signup module</a></li>
+            </ul>
+        </div>
+            <hr>
+    </section>
+</body>
+</html>
+<script>
+     function jump()
+    {
+        window.location.href = "https://www.figma.com/file/mBlwWoWLDRfiSlzcZcfiy1/Amts?node-id=0%3A1";
+    }
+    function jump1()
+    {
+        window.location.href = "https://www.figma.com/file/oo0rODxXYXS6IMfUXZkEW8/moviefly?node-id=0%3A1";
+    }
+    function getparameter(parametername)
+    {
+        let parameter = new URLSearchParams(window.location.search);
+        return parameter.get('p');
+    }
+    var project = getparameter('p');
+    if(project == 1)
+    {
+        document.getElementById("amts").style.display = "block";  
+        document.getElementById("moviefly").style.display = "none";  
+    }
+    else if(project == 2)
+    {
+        document.getElementById("amts").style.display = "none";  
+        document.getElementById("moviefly").style.display = "block";    
+    }
+</script>

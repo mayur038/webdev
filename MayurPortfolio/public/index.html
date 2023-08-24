@@ -1,0 +1,166 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap" rel="stylesheet">   
+<title>mayur gohil</title>
+</head>
+<body>
+    <a href="#" onclick="opennav()" class="hamburger" id="hm">&#9776;</a>
+    <header id="header">
+        <div class="left">
+            <a href="#" class="close" onclick="closenav()">&times;</a><br>
+            <a href="index.html">Home</a>
+            <a href="html/skils.html">projects</a>
+            <a href="html/contact.html">contact</a>
+        </div>
+        <div class="right">
+
+            <a href="https://dribbble.com/mayurgohil"><img src="images/dribbble.svg"></a>
+            <a href="https://www.linkedin.com/in/mayur-gohil-67a98b234"><img src="images/linkedin.svg"></a>
+            <button name="cv" onclick="download()">my cv</button>
+        </div>  
+    </header><div class="hr"></div>
+    <section class="main_container" id="mc">
+        <div class="text">
+            <h1>Hey i'm <b> mayur Gohil</b></h1>
+            <p> Capablity of handling stress and working independently, but also as part of a team. No experience in UI/Ux design, but interested in workig for company where i can explore and glow.  </p>
+        </div>
+        <div class="image">
+            <img src="images/profile.png">
+        </div>
+    </section>
+    <section class="skil" id="skill">
+        <div class="skill_box" id="uiux">
+            <h2>93<b style="font-size: 20px;margin: 0px 5px;margin-right: 0%;">%</b></h2>
+            <label>Ui/Ux</label>
+        </div>
+        <div class="skill_box" id="figma">
+            <h2>95<b style="font-size: 20px;margin: 0px 5px;margin-right: 0%;">%</b>
+            </h2>
+            <label>Figma</label>
+        </div>
+        <div class="skill_box" id="ld">
+            <h2>40<b style="font-size: 20px;margin: 0px 5px;margin-right: 0%;">%</b></h2>
+            <label>Logo Design</label>
+        </div>
+        <div class="skill_box" id="wd">
+            <h2>55<b style="font-size: 20px;margin: 0px 5px;margin-right: 0%;">%</b></h2>
+            <label>web Design</label>
+        </div>
+        <div class="skill_box" id="wd4">
+            <h2>30<b style="font-size: 20px;margin: 0px 5px;margin-right: 0%;">%</b></h2>
+            <label>web Devlopment</label>
+        </div>
+    </section>
+    <section class="mywork" id="work">
+        <div class="projects">
+            <div class="inner_text">
+                <h4 style="color: rgba(174, 35, 216, 0.938);">Application Design</h4>
+                <p>No Real time projects Experience but done project upon creative ideas and here i showed 2 best projects which has Globally unique idea and Problem solving. 
+                </p>
+                 <button class="rp" onclick="md()">show projects</button>
+            </div>
+            <div class="inner_image">
+                <img src="images/uiux.jpg">
+            </div>
+        </div>
+        <div class="projects">
+            <div class="inner_image">
+                <img src="images/wd.jpg" width="100%">
+            </div>
+            <div class="inner_text">
+                <h4 style="color: rgba(1, 27, 27, 0.911);">web Design</h4>
+                <p>Not much done work in web design but capable to design and devlop web independently as well as team player.</p>
+                 <button class="rp" onclick="wd()">show projects</button>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="inner_text">
+  <h4 style="color: rgb(250, 164, 6);">Logo Design</h4>
+                <p>Designed so many logos for my projects,contest as well as instagram page. I designed many project logo in Adobe Illustrator.</p>
+                 <button class="rp" onclick="ld()">show projects</button>
+            </div>
+            <div class="inner_image">
+                <img src="images/logo.png">
+            </div>
+        </div>
+    </section>
+    <p class="copyright" id="cp">mayurgohil copyright 2022 @ .com &reg;</p>
+    <section class="cv">
+        <img src="images/mayurcv.png" id="ss">
+    </section>
+</body>
+</html>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAjqVKsljLgJpTiIKzkJpCTf4v85OdxPDU",
+      authDomain: "mayur15.firebaseapp.com",
+      projectId: "mayur15",
+      storageBucket: "mayur15.appspot.com",
+      messagingSenderId: "603503252245",
+      appId: "1:603503252245:web:998e3d5e28f9f271804f1c",
+      measurementId: "G-PRDJGKX9FC"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+<script>
+    function md()
+    {
+        window.location.href = "html/skils.html?d=1";
+    }
+    function wd()
+    {
+        window.location.href = "html/skils.html?d=2";
+    }
+    function ld()
+    {
+        window.location.href = "html/skils.html?d=3";
+    }
+    function download()
+    {
+        document.getElementById("ss").style.display = "block";  
+        document.getElementById("header").style.display = "none";  
+        document.getElementById("mc").style.display = "none";  
+        document.getElementById("skill").style.display = "none";  
+        document.getElementById("work").style.display = "none";
+        document.getElementById("cp").style.display = "none";  
+        print();
+        document.getElementById("header").style.display = "block";  
+        document.getElementById("mc").style.display = "block";  
+        document.getElementById("skill").style.display = "block";  
+        document.getElementById("work").style.display = "block";
+        document.getElementById("cp").style.display = "block";    
+        document.getElementById("ss").style.display = "none";  
+    }
+    function opennav()
+    {
+        document.getElementById("header").style.display = "block";  
+        document.getElementById("hm").style.display = "none";
+    }
+    function closenav()
+    {
+        document.getElementById("hm").style.display = "block";
+        document.getElementById("header").style.display = "none";
+        console.log("hrllo");
+    }
+</script>

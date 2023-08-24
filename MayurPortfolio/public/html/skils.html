@@ -1,0 +1,188 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/skill.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap" rel="stylesheet">   
+
+    <title>mayur | skills</title>
+</head>
+<body>
+    <a href="#" onclick="opennav()" class="hamburger" id="hm">&#9776;</a>
+    <A href="../index.html">
+    <div class="backd" id="back">
+        <img src="../images/arrow-left.svg">
+    </div></A>
+    <header id="sheader">
+        <div class="left"> 
+            <a href="#" class="close" onclick="closenav()">&times;</a><br> 
+            <a href="../index.html">Home</a>
+            <a href="../html/skils.html">projects</a>
+            <a href="../html/contact.html">contact</a>
+        </div>
+        <div class="right">
+
+            <a href="https://dribbble.com/mayurgohil"><img src="../images/dribbble.svg"></a>
+            <a href="https://www.linkedin.com/in/mayur-gohil-67a98b234"><img src="../images/linkedin.svg"></a>
+            <button name="cv" onclick="download()">my cv</button>
+        </div>  
+    </header><div class="hr"></div>
+    <section class="mobile_Design" id="md">
+        <div class="projects">
+            <img src="../images/amts.png">
+            <h4>UI amts Bus travelling App.</h4>
+            <label>20 Days</label>
+            <p>Mobile Design</p>
+            <button name="pt" onclick="amts()">Jump to Prototype</button>
+        </div>
+        <div class="projects">
+            <img src="../images/moviefly.png">
+            <h4>Design of Moviefly App.</h4>
+            <label>15 Days</label>
+            <p>Mobile Design</p>
+            <button name="pt" onclick="mf()">Jump to Prototype</button>
+        </div>
+    </section>
+    <section class="web_design" id="wd">
+        <div class="projects">
+            <img src="../images/dmart.png">
+            <h4>UI design of D-mart (e-commerce web)</h4>
+            <label>15 Days</label>
+            <p>web Design</p>
+            <button name="pt" onclick="dmart()">Jump to Prototype</button>
+        </div>
+    </section>
+    <section class="showcase" id="ld">    
+        <h5>Logo Designs</h5>
+        <div class="row">
+            <div class="colummn1">
+                <img src="../images/dmart.png">
+            </div>
+            <div class="colummn2" style="background-color: #141415;">
+                <img src="../images/pi dd.JPG">
+            </div>
+        </div>  
+        <div class="row">
+            <div class="colummn3" style="background-color: #abc9ff;">
+                <img src="../images/tappp.png" id="dd">
+            </div>
+            <div class="colummn4" style="background-color:white ;">
+                <img src="../images/Asset 1.png" >
+            </div>
+            <div class="colummn5" style="background-color: whitesmoke">
+                <img src="../images/IIC.png" id="dd4"  style="padding: 10% 10%;height: 80%;width: 70%;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="colummn54" style="background-color: rgba(0, 0, 0, 0.918);">
+                <img src="../images/mk.png" style="padding: 10%;height: 70%;width: 70%;">
+            </div>
+            <div class="colummn54" style="background-color: #bde6f7d8;">
+                <img src="../images/Asset 2.png" style="padding: 10%;height: 70%;width: 70%;">
+            </div>
+        </div>  
+    
+    </section>
+    <section class="cv">
+        <img src="../images/mayurcv.png" id="ss">
+    </section>
+</body>
+</html>
+<script>
+    function getparameter(parametername)
+    {
+        let parameter = new URLSearchParams(window.location.search);
+        return parameter.get('d');
+    }
+    function amts()
+    {
+        window.location.href = "md.html?p=1";
+    }
+    function mf()
+    {
+        window.location.href = "md.html?p=2";
+    }
+    function dmart()
+    {
+        window.location.href = "wd.html";
+    }
+    function hoome()
+    {
+        window.location.href = "../index.html";
+    }
+</script>
+</html>
+<script>     
+    function download()
+    {
+        document.getElementById("back").style.display = "none";  
+        document.getElementById("sheader").style.display = "none";  
+        document.getElementById("md").style.display = "none";  
+        document.getElementById("wd").style.display = "none";  
+        document.getElementById("ld").style.display = "none";
+        document.getElementById("ss").style.display = "block";  
+        print();
+        document.getElementById("back").style.display = "block";  
+        document.getElementById("sheader").style.display = "block";  
+        document.getElementById("md").style.display = "block";  
+        document.getElementById("wd").style.display = "block";  
+        document.getElementById("ld").style.display = "block";
+        document.getElementById("ss").style.display = "none"; 
+    }
+
+     var project = getparameter('d');
+    if(project == 1)
+    {
+        document.getElementById("hm").style.display = "none";   
+        document.getElementById("sheader").style.display = "none";   
+        document.getElementById("md").style.display = "block"; 
+        document.getElementById("back").style.display = "block"; 
+        document.getElementById("wd").style.display = "none"; 
+        document.getElementById("ld").style.display = "none";   
+    }
+    else if (project == 2)
+    {
+        document.getElementById("hm").style.display = "none";   
+        document.getElementById("back").style.display = "block"; 
+        document.getElementById("sheader").style.display = "none";   
+        document.getElementById("md").style.display = "none"; 
+        document.getElementById("wd").style.display = "block"; 
+        document.getElementById("ld").style.display = "none";  
+}
+else if(project == 3)
+{
+
+    document.getElementById("hm").style.display = "none";   
+    document.getElementById("back").style.display = "block"; 
+    document.getElementById("sheader").style.display = "none";   
+        document.getElementById("md").style.display = "none"; 
+        document.getElementById("wd").style.display = "none"; 
+        document.getElementById("ld").style.display = "block"; 
+}
+else
+{
+    document.getElementById("sheader").style.display = "block";   
+    document.getElementById("md").style.display = "block"; 
+        document.getElementById("wd").style.display = "block"; 
+        document.getElementById("ld").style.display = "block"; 
+        console.log("error")
+}
+function opennav()
+    {
+        document.getElementById("sheader").style.display = "block";  
+        document.getElementById("hm").style.display = "none";
+    }
+    function closenav()
+    {
+        document.getElementById("hm").style.display = "block";
+        document.getElementById("sheader").style.display = "none";
+        console.log("hrllo");
+    }
+</script>

@@ -1,0 +1,199 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Nunito', sans-serif;
+}
+.back
+{
+    position: fixed;
+    width: 40px;
+    margin: 0% 1%;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.116);
+    text-align: center;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.151);
+    vertical-align: middle;
+    overflow: hidden;
+}
+.back a
+{
+    display: block;
+    margin: 2%;
+    font-size: 25px;
+    font-weight: 900;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.37);
+    vertical-align: middle;
+}
+.blog
+{
+    position: relative; 
+    width: 90%;
+    height: auto;
+    margin: 5% auto;
+}
+.banner
+{
+    background-color: rgba(143, 27, 143, 0.322);
+    height: 23%;
+    background-image: url(../images/uiux.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+    opacity: 0.9;
+    box-shadow: 0px 0px 3px rgba(137, 43, 226, 0.356);
+}
+h2
+{
+    text-decoration: none;
+    text-align: center;
+    color: rgba(252, 107, 107, 0.932);
+}
+.file
+{
+    height: auto;
+    width: 50%;
+    text-align: center;
+}
+.file img
+{
+    padding: -10px;
+    width: 100%;
+}
+.file button
+{
+  width: 50%;
+  height: 32px;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: rgb(106, 106, 241);
+  margin: 1% 0%;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.301);
+}
+.file button:hover
+{
+    border: 2px solid blueviolet;
+    background-color: rgba(137, 43, 226, 0.288);
+    color: rgba(137, 43, 226, 0.897);
+    transition: 0.3s all;
+    letter-spacing: 2px;
+}
+.file ,.paragraph
+{
+    display: inline-block;
+}
+.paragraph
+{
+    width: 45%;
+    height: auto;
+    vertical-align: top;
+    margin: 3% 1%;
+}
+.paragraph  p
+{
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.815);
+}
+.features
+{
+    height: auto;
+   
+}
+.features h5
+{
+    margin: 3% 5%;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: blueviolet;
+}
+.features ul
+{
+    font-size: 20px;
+   color: rgba(164, 98, 226, 0.89);
+}
+.features ul li a
+{
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+.features ul li
+{
+    margin: 10px 10px;
+}
+.blog hr
+{
+    text-align: center;
+    width: 35%;
+    margin: 5% auto;
+}
+@media only screen and (max-width:700px) {
+    .back
+    {
+        z-index: 1;
+        background-color: rgba(250, 246, 246, 0.774);
+    }
+    .blog
+    {
+        width: 100%;
+        margin: 0% auto;
+        overflow: hidden;
+    }
+    .banner
+    {
+        height: 30%;
+    }
+    h2
+    {
+        margin: 2% auto;
+        font-size: 15px;
+    }
+    .file
+    {
+        width: 97%;
+        margin: 1% auto;
+    }
+    .file button 
+    {
+        width: 70%;
+        font-size: 13px;
+        margin: 2% auto;
+    }
+    .paragraph
+    {
+        width: 90%;
+        margin: 1% 5%;
+    }
+    .paragraph p
+    {
+        margin: 10px auto;
+        font-size: 15px;
+        letter-spacing: 0ch;
+    }
+    .features h5
+    {
+        margin: 1% 2%;
+        font-size: 18px;
+    }
+    .features ul
+    {
+        font-size: 15px;
+    }
+    .features ul li
+    {
+        margin: 5px 10px;
+    }
+    .blog hr
+    {
+        background-color: rgba(0, 0, 0, 0.308);
+    }
+}
